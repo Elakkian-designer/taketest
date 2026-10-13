@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TAKE TEST</title>
+<meta name="theme-color" content="#4169A8">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAwFBMVEX4/f/z/P/y+//x+v/x+f/w9/7q8//o8v7q8PDv57P04ov532723nD+3Ef/2UH92ED/5Tr/4Dr/3Tz/2T//2T3+2T3+2Tf/2Dj91z3/1zD/1y3P1cv51T781TPG1ey1yOWnvuHXv0O5qEmYsth9nc9xlMlqirRdhMJchMJbg8Bif6RWf75VfbtVfbpUfr5Ufb5Ufb1SfL1Re71QertQeLZPd7Voa1hHb65Hb61Da6pCaqlBaahAaKc/Z6ZEUl4UL2aJme4NAAABjklEQVR42p2Ta3NDQBSGSSJuzZLFZBklIgaTTcgFJav+/7/qksvQdkba82U/vM+e+2GuI8b8BSA1qcqyos+vACFFto+p7bOCkJ9AXeBodzoeDsfTLsJF/Q0g10t4SALfdRzXD5JDeLmSAVDh6Lx15uxkNpuwc2d7jnA1AHCcrrmpIEqyLInClFunMe4BJAtTl+GlhdnZQuIZNw0z8gBIEZ7XjCBbKwA0DYCV+SYw63NYkAeAky3HyxbQ9M4MaMk8t03wHSAfUeJMRQvcZB0t89wSp04SfZAOqLNdMBcWq/t/e+k1jb0Q5sEuq28e8MlnRRMYCLX/of3ZeNAUWf+Ebx6q+OhOJBNAFSIdGVTfqIopTdxjXHVAGafOTH7X7Hyj2oaaU93WTHnmpHHZB9rQngo7XR8A9xAK3FAib/IlMijQC/FIEqnUR5OrhqHroJ/ks0y7JWyaqa6tBmU+G4WWntfqOhg0qtdqBCH1r4Fhq/vDUpR2WJY8HNbouMcX5oWVG13a0bV/4XDGT++/1/0FPaGqSW13V7EAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<script>
+// The app icon is stored inside this file. The install manifest is built here too, so index.html works on its own.
+// If manifest.json and the icon files are uploaded next to this page, those are used instead (needed for a full Android install).
+(function () {
+  var I192 = "data:image/png;base64,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";
+  var I512 = "data:image/png;base64,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";
+  var base = location.href.split("#")[0].split("?")[0].replace(/[^\/]*$/, "");
+  function add(href) {
+    var l = document.createElement("link"); l.rel = "manifest"; l.href = href; document.head.appendChild(l);
+  }
+  function inline() {
+    try {
+      var m = {
+        id: new URL("take-test-app", location.origin).href,
+        name: "TAKE TEST", short_name: "TAKE TEST",
+        description: "Turn your study material into verified TNPSC-style MCQs.",
+        start_url: base, scope: base, display: "standalone",
+        background_color: "#EAF2FF", theme_color: "#4169A8", prefer_related_applications: false,
+        icons: [
+          { src: I192, sizes: "192x192", type: "image/png", purpose: "any" },
+          { src: I512, sizes: "512x512", type: "image/png", purpose: "any" },
+          { src: I512, sizes: "512x512", type: "image/png", purpose: "maskable" }
+        ]
+      };
+      add(URL.createObjectURL(new Blob([JSON.stringify(m)], { type: "application/manifest+json" })));
+    } catch (e) {}
+  }
+  if (!/^https?:$/.test(location.protocol)) return inline();
+  fetch("manifest.json").then(function (r) { return r.ok ? fetch("icon-512.png") : Promise.reject(); })
+    .then(function (r) { r.ok ? add("manifest.json") : inline(); }).catch(inline);
+})();
+</script>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="TAKE TEST">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>
+try { document.documentElement.dataset.theme = (JSON.parse(localStorage.getItem("cfg") || "{}").theme) || "light"; }
+catch (e) { document.documentElement.dataset.theme = "light"; }
+</script>
+<style>
+:root{
+  --paper:#EAF2FF; --card:#FFFFFF; --ink:#14233D; --muted:#4B5D7A; --line:#B8D0F5; --edge:#6B8FC9;
+  --pen:#4169A8; --pen-ink:#FFFFFF; --link:#4169A8; --ok:#17702F; --ok-bg:#E1F3E7; --bad:#B42318; --bad-bg:#FBE7E4;
+  --mark:#FFE15A; --mark-ink:#14233D;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Tamil","Latha","Nirmala UI",system-ui,sans-serif;
+}
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0F1830; --card:#172341; --ink:#E6EEFF; --muted:#A3B4D4; --line:#2A3A62; --edge:#5578B5; --pen:#8FB0F0; --pen-ink:#0B1530; --link:#8FB0F0; --ok:#5ED08A; --ok-bg:#123324; --bad:#FF8A80; --bad-bg:#3A1B1B;}
+@media (prefers-color-scheme:dark){
+  :root[data-theme="auto"]{color-scheme:dark;--paper:#0F1830; --card:#172341; --ink:#E6EEFF; --muted:#A3B4D4; --line:#2A3A62; --edge:#5578B5; --pen:#8FB0F0; --pen-ink:#0B1530; --link:#8FB0F0; --ok:#5ED08A; --ok-bg:#123324; --bad:#FF8A80; --bad-bg:#3A1B1B;}
+}
+:root[data-theme="auto"]{color-scheme:light dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--font);
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+main,.top{max-width:640px;margin:0 auto;padding:0 16px}
+.top{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:6px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand h1{margin:0;font-size:1.35rem;font-weight:800;letter-spacing:-.01em}
+h2{margin:0 0 10px;font-size:1.05rem;font-weight:700}
+main{padding-bottom:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+label{display:block;font-size:.88rem;color:var(--muted);margin:0 0 12px}
+input,select,textarea{display:block;width:100%;margin-top:4px;padding:11px 12px;font:inherit;color:var(--ink);
+  background:var(--paper);border:1px solid var(--edge);border-radius:10px}
+textarea{resize:vertical;min-height:140px}
+.col{min-width:0}
+.row{display:flex;gap:12px}.row>*{flex:1}
+button{font:inherit;cursor:pointer;min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--edge);
+  background:var(--card);color:var(--ink)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:var(--pen);color:var(--pen-ink);border-color:var(--pen);font-weight:700;width:100%}
+button.link{border:0;background:none;min-height:36px;padding:0 6px;color:var(--link);text-decoration:underline}
+button.danger{color:var(--bad)}
+:focus-visible{outline:3px solid var(--pen);outline-offset:2px}
+.status{margin:10px 0 0;font-size:.92rem;color:var(--muted);min-height:1.2em}
+.status.err{color:var(--bad)}
+.muted{color:var(--muted);font-size:.92rem;margin:0 0 10px}
+.foot{text-align:center;margin:8px 0}
+.note{margin:28px 0 8px;padding:20px 16px;text-align:center;border-top:1px solid var(--line)}
+.note .t{margin:0 0 6px;font-weight:800;font-size:1.05rem}
+.note p{margin:0 0 6px;color:var(--muted)}
+.note .end{margin:12px 0 0;color:var(--ink);font-weight:600}
+.greet{margin:18px 0 4px}
+.hello{margin:0;font-size:1.6rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.sub{margin:6px 0 0;color:var(--muted)}
+.cheer{display:inline-block;margin:10px 0 0;padding:6px 12px;border-radius:99px;background:var(--mark);color:var(--mark-ink);font-size:.9rem;font-weight:600}
+a.btnlink{display:grid;place-items:center;min-height:44px;border:1px solid var(--edge);border-radius:10px;background:var(--card);color:var(--link);font-weight:600;text-decoration:none}
+.step{margin:14px 0 6px;font-weight:600}
+
+/* saved tests */
+.qrow{display:flex;align-items:center;gap:8px;padding:10px 0;border-top:1px solid var(--line)}
+.qrow:first-child{border-top:0}
+.qrow .meta{flex:1;min-width:0}
+.qrow .meta b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qrow .meta span{font-size:.85rem;color:var(--muted)}
+.qrow button{min-height:40px;padding:0 12px}
+
+/* weak topics */
+.bar{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:.92rem}
+.bar .name{flex:0 0 42%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .track{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar .fill{height:100%;background:var(--pen)}
+.bar .fill.low{background:var(--bad)}
+.bar .pct{flex:0 0 44px;text-align:right;color:var(--muted)}
+
+/* quiz */
+.qbar{display:flex;align-items:center;gap:12px;padding-top:18px}
+.qbar .count{font-weight:700}
+.qbar .timer{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:700}
+.qbar .timer.low{color:var(--bad)}
+.progress{height:6px;border-radius:99px;background:var(--line);margin:12px 0 18px;overflow:hidden}
+.progress>div{height:100%;background:var(--pen);transition:width .25s}
+.tag{display:inline-block;font-size:.8rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:1px 10px;margin-bottom:10px}
+.question{font-size:1.2rem;line-height:1.5;font-weight:600;margin:0 0 18px;white-space:pre-line}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;text-align:left;width:100%;padding:12px;min-height:56px;border:1.5px solid var(--edge);background:var(--card);border-radius:12px}
+.bubble{flex:0 0 30px;height:30px;border-radius:50%;border:2px solid var(--muted);display:grid;place-items:center;font-size:.85rem;font-weight:700;color:var(--muted);margin-top:1px}
+.opt .txt{padding-top:3px}
+.opt:not(:disabled):hover{border-color:var(--pen)}
+.opt.sel .bubble{background:var(--pen);border-color:var(--pen);color:var(--pen-ink)}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.right .bubble{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.wrong .bubble{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt:disabled{opacity:1;cursor:default}
+.fb{margin-top:16px}
+.verdict{font-weight:700;margin:0 0 6px}
+.verdict.ok{color:var(--ok)}.verdict.bad{color:var(--bad)}
+.expl{margin:0 0 12px}
+.evidence{margin:0 0 4px;font-size:.82rem;color:var(--muted)}
+.quote{margin:0 0 14px;padding:8px 10px;border-radius:6px;background:var(--mark);color:var(--mark-ink);font-size:.95rem}
+.fbactions{display:flex;gap:10px;align-items:center}
+.fbactions .primary{flex:1;width:auto}
+
+/* result */
+.score{font-size:3.2rem;font-weight:800;letter-spacing:-.02em;margin:6px 0 0;line-height:1.1}
+.score small{font-size:1.2rem;color:var(--muted);font-weight:600}
+.stack{display:grid;gap:10px;margin-top:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+button.copied{background:#2e8b57!important;border-color:#2e8b57!important;color:#fff!important}
+
+/* laptop and large screens */
+@media (min-width:900px){
+  body{font-size:17px}
+  main,.top{max-width:1100px;padding:0 28px}
+  .top{padding-top:24px}
+  .home-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:0 32px;align-items:start}
+  .home-grid>.full{grid-column:1/-1}
+  textarea{min-height:200px}
+  .hello{font-size:2rem}
+  #view-quiz,#view-result,#view-settings{max-width:760px;margin-left:auto;margin-right:auto}
+  .question{font-size:1.35rem}
+  .opt{padding:14px 16px}
+  .card{padding:20px}
+}
+@media (min-width:600px) and (max-width:899px){
+  #view-quiz,#view-result,#view-settings{max-width:640px;margin-left:auto;margin-right:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="brand">
+    <svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true" style="display:block">
+      <rect width="100" height="100" rx="22" fill="#4169A8"/>
+      <circle cx="50" cy="50" r="40" fill="#5A82C0"/>
+      <circle cx="50" cy="50" r="33" fill="#EAF2FF"/>
+      <circle cx="50" cy="50" r="27" fill="#FFD93D"/>
+      <polyline points="36.5,50.5 46.5,60.5 66,38.5" fill="none" stroke="#1E3764" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h1>TAKE TEST</h1>
+  </div>
+  <button id="btnSettings" class="link">Settings</button>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="view-home">
+    <div class="greet">
+      <p class="hello" id="hello"></p>
+      <p class="sub" id="sub"></p>
+      <p class="cheer" id="cheer" hidden></p>
+    </div>
+    <div class="home-grid">
+    <div class="col">
+    <div class="card">
+      <h2>Make a test</h2>
+      <label>Title or topic
+        <input id="title" type="text" placeholder="e.g. Fundamental Rights">
+      </label>
+      <label>Study material
+        <textarea id="text" placeholder="Paste your notes or a YouTube transcript here. Or leave this empty and type only a topic above."></textarea>
+      </label>
+      <div class="row">
+        <label>Questions
+          <select id="count"><option>5</option><option selected>10</option><option>15</option><option>20</option><option value="custom">Custom</option></select>
+        </label>
+        <label>Language
+          <select id="lang"><option>English</option><option>Tamil</option><option>Tamil and English (bilingual)</option></select>
+        </label>
+      </div>
+      <label id="customWrap" hidden>How many questions (1 to 50)
+        <input id="countCustom" type="number" min="1" max="50" step="1" inputmode="numeric" value="10">
+      </label>
+      <button id="btnGen" class="primary">Generate test</button>
+      <button id="btnInstant" style="width:100%;margin-top:10px">Instant test with no AI (fill in the blanks)</button>
+      <p id="status" class="status" role="status"></p>
+    </div>
+
+    <div class="card" id="manualBox" hidden>
+      <h2>Use free ChatGPT or Gemini</h2>
+      <p class="muted" style="margin:0">No key needed. Three steps.</p>
+      <p class="step">1. Copy the prompt</p>
+      <textarea id="manualPrompt" readonly rows="4" style="min-height:0"></textarea>
+      <button id="btnCopy" class="primary" style="margin-top:8px">Copy prompt</button>
+      <p class="step">2. Open a free AI app, paste the prompt, and send it</p>
+      <div class="row">
+        <a class="btnlink" href="https://gemini.google.com/app" target="_blank" rel="noopener">Open Gemini</a>
+        <a class="btnlink" id="btnOpenChatGPT" href="https://chatgpt.com" target="_blank" rel="noopener">Open ChatGPT</a>
+      </div>
+      <p class="step">3. Copy the AI's reply and paste it here</p>
+      <textarea id="reply" rows="6" placeholder="Paste the AI's reply here"></textarea>
+      <button id="btnImport2" class="primary" style="margin-top:8px">Make test from reply</button>
+      <button id="btnCancelManual" class="link" style="margin-top:6px">Cancel</button>
+      <p id="manualStatus" class="status" role="status"></p>
+    </div>
+
+    </div>
+    <div class="col">
+    <div class="card">
+      <h2>Revision</h2>
+      <p id="wrongInfo" class="muted"></p>
+      <div class="row">
+        <button id="btnDue">Revise due questions</button>
+        <button id="btnAllWrong">Practice all wrong</button>
+      </div>
+    </div>
+
+    <div class="card" id="weakCard" hidden>
+      <h2>Weak topics</h2>
+      <div id="weakList"></div>
+    </div>
+
+    <div class="card">
+      <h2>Saved tests</h2>
+      <div id="quizList"></div>
+    </div>
+
+    </div>
+    <div class="full">
+    <p class="foot">
+      <button class="link" id="btnSample">Try a sample test</button>
+      <button class="link" id="btnInstall">Install app</button>
+    </p>
+    <p class="status" id="installMsg" role="status" hidden style="text-align:center"></p>
+
+    <footer class="note">
+      <p class="t">A Little Something, Just for You.</p>
+      <p>Keep going. Your hard work will take you somewhere beautiful. 🌷</p>
+      <p class="end">With care, always. ❤️</p>
+    </footer>
+    </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="view-quiz" hidden>
+    <div class="qbar">
+      <button id="btnExit" style="min-height:36px;padding:0 12px">Exit test</button>
+      <span class="count" id="qCount"></span>
+      <span class="timer" id="qTimer" hidden></span>
+    </div>
+    <div class="progress"><div id="qProg" style="width:0"></div></div>
+    <span class="tag" id="qTopic" hidden></span>
+    <p class="question" id="qText"></p>
+    <div class="opts" id="qOpts"></div>
+    <button id="btnSkip" style="width:100%;margin-top:12px">Skip question</button>
+    <div class="fb" id="qFb" hidden>
+      <p class="verdict" id="fbVerdict"></p>
+      <p class="expl" id="fbExpl"></p>
+      <div id="fbEvidence">
+        <p class="evidence">From your material</p>
+        <p class="quote" id="fbQuote"></p>
+      </div>
+      <button id="btnMaster" class="link" style="margin:0 0 10px" hidden>I know this, remove from revision</button>
+      <div class="fbactions">
+        <button id="btnReport" class="danger">Report wrong question</button>
+        <button id="btnNext" class="primary">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="view-result" hidden>
+    <div class="card" style="margin-top:18px">
+      <p class="muted" id="rTitle" style="margin:0"></p>
+      <p class="score"><span id="rScore"></span> <small id="rPct"></small></p>
+      <p id="rMsg" class="muted" style="margin-top:6px"></p>
+      <p class="cheer" id="rCheer" hidden style="margin:0 0 12px"></p>
+      <div id="rTopics"></div>
+      <div class="stack">
+        <button id="btnRetry" class="primary">Retry wrong ones</button>
+        <button id="btnHome">Back to home</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="view-settings" hidden>
+    <div class="card" style="margin-top:18px">
+      <h2>Settings</h2>
+      <label>Name for greetings
+        <input id="cfgName" type="text" maxlength="30" autocomplete="off" placeholder="Kalaiyarasi">
+      </label>
+      <label>Theme
+        <select id="cfgTheme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="auto">Match my phone</option>
+        </select>
+      </label>
+      <label>AI provider
+        <select id="cfgProv">
+          <option value="manual">No key: free ChatGPT / Gemini app (copy and paste)</option>
+          <option value="gemini">Gemini (Google), with key</option>
+          <option value="openai">ChatGPT (OpenAI), with key</option>
+          <option value="backend">My own backend (advanced)</option>
+        </select>
+      </label>
+      <div id="boxKey">
+        <label>API key
+          <input id="cfgKey" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste your API key">
+        </label>
+        <label>Model
+          <input id="cfgModel" type="text" autocapitalize="off" spellcheck="false">
+        </label>
+        <p class="muted" id="keyHelp"></p>
+      </div>
+      <div id="boxApi" hidden>
+        <label>Backend URL
+          <input id="cfgApi" type="url" placeholder="https://tnpsc-quiz-api.yourname.workers.dev">
+        </label>
+      </div>
+      <label style="display:flex;align-items:center;gap:10px;color:var(--ink)">
+        <input id="cfgTimed" type="checkbox" style="width:auto;margin:0"> Timed mode (auto-reveal when time runs out)
+      </label>
+      <label>Seconds per question
+        <input id="cfgSecs" type="number" min="10" max="180" value="45">
+      </label>
+      <button id="btnSaveCfg" class="primary">Save settings</button>
+      <p id="saveStatus" class="status" role="status"></p>
+    </div>
+    <div class="card">
+      <h2>Backup</h2>
+      <p class="muted">Tests and wrong answers live only on this device. Export a backup now and then.</p>
+      <div class="row">
+        <button id="btnExport">Export backup</button>
+        <button id="btnImport">Import backup</button>
+      </div>
+      <input id="fileImport" type="file" accept="application/json" hidden>
+      <p id="cfgStatus" class="status" role="status"></p>
+    </div>
+    <button id="btnBackSettings" style="width:100%">Back</button>
+  </section>
+</main>
+
+<script>
+"use strict";
+const $ = (s) => document.querySelector(s);
+function h(tag, props, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) {
+    if (k === "class") e.className = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) e.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k != null) e.append(k.nodeType ? k : document.createTextNode(String(k)));
+  return e;
+}
+
+/* ---------- storage ---------- */
+const DB = (() => {
+  let p;
+  const open = () => (p ||= new Promise((res, rej) => {
+    const r = indexedDB.open("tnpsc-quiz", 1);
+    r.onupgradeneeded = () => {
+      for (const s of ["quizzes", "wrong", "results"]) r.result.createObjectStore(s, { keyPath: "id" });
+    };
+    r.onsuccess = () => res(r.result);
+    r.onerror = () => rej(r.error);
+  }));
+  const run = async (store, mode, fn) => {
+    const db = await open();
+    return new Promise((res, rej) => {
+      const t = db.transaction(store, mode);
+      const req = fn(t.objectStore(store));
+      t.oncomplete = () => res(req && req.result);
+      t.onerror = t.onabort = () => rej(t.error);
+    });
+  };
+  return {
+    all: (s) => run(s, "readonly", (o) => o.getAll()),
+    get: (s, k) => run(s, "readonly", (o) => o.get(k)),
+    put: (s, v) => run(s, "readwrite", (o) => o.put(v)),
+    del: (s, k) => run(s, "readwrite", (o) => o.delete(k)),
+  };
+})();
+
+// Put your Cloudflare Worker URL here so the app works for her with no setup. Leave "" to use keys in Settings.
+const DEFAULT_BACKEND = "";
+const DEF = { provider: DEFAULT_BACKEND ? "backend" : "manual", gKey: "", gModel: "gemini-2.5-flash", oKey: "", oModel: "gpt-4o-mini", api: DEFAULT_BACKEND, timed: false, secs: 45, name: "Kalaiyarasi", theme: "light" };
+const cfgGet = () => {
+  try { return Object.assign({}, DEF, JSON.parse(localStorage.getItem("cfg"))); }
+  catch { return { ...DEF }; }
+};
+const cfgSet = (c) => localStorage.setItem("cfg", JSON.stringify(c));
+
+const hid = (s) => {
+  let x = 5381;
+  for (const c of s) x = ((x << 5) + x + c.codePointAt(0)) | 0;
+  return "q" + (x >>> 0).toString(36);
+};
+const norm = (s) => String(s).toLowerCase().replace(/[.,;:!?"'\u201c\u201d\u2018\u2019()\[\]\-\u2013\u2014]/g, "").replace(/\s+/g, " ").trim();
+const DAY = 864e5, INTERVALS = [1, 3, 7];
+const fmtDate = (t) => new Date(t).toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+const validQ = (q) => q && typeof q.question === "string" && Array.isArray(q.options) && q.options.length === 4 &&
+  Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4;
+
+/* ---------- reading AI replies (ChatGPT and Gemini format answers differently) ---------- */
+const isNumLike = (v) => typeof v === "number" || (typeof v === "string" && /^\s*\d+\s*$/.test(v));
+const rawAnswer = (r) => r.answer ?? r.correct ?? r.correct_answer ?? r.correctAnswer ?? r.answer_index ?? r.correct_index ?? r.correct_option ?? r.correctOption;
+
+const SYLLABUS = [
+  [/polity|constitution|governance|civics|political/i, "Polity"],
+  [/histor/i, "History"],
+  [/geograph/i, "Geography"],
+  [/econom/i, "Economy"],
+  [/tamil\s*nadu.*admin|administration|\btn\b.*admin/i, "Tamil Nadu Administration"],
+  [/aptitude|reasoning|mental ability|mathemat|numerical/i, "Aptitude"],
+  [/science|physics|chemistry|biology/i, "General Science"],
+  [/tamil.*(literature|language)|literature|thirukkural|sangam/i, "Tamil Literature"],
+  [/current affairs/i, "Current Affairs"]
+];
+const cleanTopic = (t) => { const s = String(t || ""); const m = SYLLABUS.find(([re]) => re.test(s)); return m ? m[1] : ""; };
+
+function getOpts(r) {
+  let o = r.options ?? r.choices ?? r.option;
+  if (o && !Array.isArray(o) && typeof o === "object") o = Object.keys(o).sort().map((k) => o[k]);
+  if (!Array.isArray(o)) {
+    const a = ["a", "b", "c", "d"].map((l) => r["option_" + l] ?? r["option" + l.toUpperCase()] ?? r[l.toUpperCase()] ?? r[l]);
+    o = a.every((x) => x != null) ? a : null;
+  }
+  if (!o) return null;
+  o = o.map((x) => String(x && typeof x === "object" ? (x.text ?? x.label ?? x.option ?? x.value ?? "") : x ?? "").trim());
+  // remove "A) ", "B. ", "(c) ", "1) " labels, but only when all four options carry them in order
+  const lab = o.map((x) => x.match(/^\(?([A-Da-d1-4])[\).:]\s+/));
+  if (o.length === 4 && lab.every((m, i) => m && (m[1].toUpperCase() === "ABCD"[i] || m[1] === String(i + 1))))
+    o = o.map((x) => x.replace(/^\(?[A-Da-d1-4][\).:]\s+/, "").trim());
+  return o;
+}
+
+// Turn 1, "1", "B", "Option B", "B) text" or the option text itself into an index 0-3 (or -1)
+function toIdx(v, opts, oneBased) {
+  if (v == null) return -1;
+  if (isNumLike(v)) return +v - (oneBased ? 1 : 0);
+  const s = String(v).trim();
+  const i = (opts || []).findIndex((x) => norm(x) === norm(s));
+  if (i >= 0) return i;
+  const m = s.match(/^\(?(?:option\s*)?([A-Da-d])\)?(?:[\).:\s]|$)/i);
+  return m ? "abcd".indexOf(m[1].toLowerCase()) : -1;
+}
+
+// Accepts the loose shapes AI tools produce and returns clean questions that pass validQ
+function fixQs(arr) {
+  const raw = (Array.isArray(arr) ? arr : []).filter((r) => r && typeof r === "object");
+  const oneBased = raw.some((r) => isNumLike(rawAnswer(r)) && +rawAnswer(r) === 4);
+  const out = [];
+  for (const r of raw) {
+    const question = String(r.question ?? r.q ?? r.text ?? r.prompt ?? "").trim();
+    const options = getOpts(r);
+    if (!question || !options || options.length !== 4 || options.some((x) => !x)) continue;
+    const answer = toIdx(rawAnswer(r), options, oneBased);
+    if (answer < 0 || answer > 3) continue;
+    out.push({ question, options, answer,
+      explanation: String(r.explanation ?? r.rationale ?? "").trim(),
+      source_quote: String(r.source_quote ?? r.quote ?? "").trim(),
+      topic: cleanTopic(r.topic ?? r.subject) });
+  }
+  return out;
+}
+
+/* ---------- theme ---------- */
+function applyTheme(t) {
+  t = ["light", "dark", "auto"].includes(t) ? t : "light";
+  document.documentElement.dataset.theme = t;
+  const dark = t === "dark" || (t === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = dark ? "#172341" : "#4169A8";
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => applyTheme(cfgGet().theme));
+
+/* ---------- greetings, streaks ---------- */
+const DAILY = [
+  "Small steps every day.",
+  "One topic today is enough to move forward.",
+  "Revise what you learned, not just what is new.",
+  "A mistake is just a question you will get right next time.",
+  "Ten focused minutes beat an hour of scrolling.",
+  "Consistency matters more than speed.",
+  "Today's practice is tomorrow's easy mark.",
+  "Start with the topic you like least.",
+  "You do not need to know everything, just the next thing.",
+  "Testing yourself is the best way to remember.",
+  "Rest well. A tired mind forgets.",
+  "Every question you review is one less surprise in the exam.",
+  "Slow progress is still progress.",
+  "Learn it, test it, revise it.",
+  "Show up today and the rest follows.",
+];
+const MILESTONES = [3, 5, 7, 10, 14, 21, 30, 50, 100];
+
+const dayKey = (d = new Date()) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+const getDays = () => { try { return JSON.parse(localStorage.getItem("days")) || []; } catch { return []; } };
+const saveDays = (days) => { try { localStorage.setItem("days", JSON.stringify([...new Set(days)].sort().slice(-400))); } catch {} };
+
+// Days in a row, counting back from today (or from yesterday if she has not studied yet today)
+function streakOf(days) {
+  const set = new Set(days);
+  const d = new Date();
+  if (!set.has(dayKey(d))) d.setDate(d.getDate() - 1);
+  let n = 0;
+  while (set.has(dayKey(d))) { n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+
+function timeGreet(h = new Date().getHours()) {
+  return h >= 5 && h < 12 ? "Good morning" : h >= 12 && h < 17 ? "Good afternoon" : h >= 17 ? "Good evening" : "Hello";
+}
+
+function renderGreeting() {
+  const name = (cfgGet().name || "").trim();
+  $("#hello").textContent = name ? timeGreet() + ", " + name : timeGreet();
+  const d = new Date();
+  const dayNo = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5);
+  $("#sub").textContent = DAILY[dayNo % DAILY.length];
+
+  const days = getDays(), st = streakOf(days), today = days.includes(dayKey());
+  const c = st >= 2 ? (today ? `${st} days in a row. Nice work.` : `${st} day streak. Take a test today to keep it going.`) : "";
+  $("#cheer").hidden = !c; $("#cheer").textContent = c;
+}
+
+function resultMsg(score, total, pct, name, saved) {
+  const n = name ? ", " + name : "";
+  if (!total) return "No questions were counted.";
+  if (pct >= 80) return `Great job${n}! ${score} out of ${total}.`;
+  if (!saved) return `Good try${n}. Keep practising.`;
+  if (pct >= 50) return `Good work${n}. ${score} out of ${total}. The ones you missed are saved for revision.`;
+  return `Good try${n}. Your wrong answers are saved so you can revise them.`;
+}
+
+/* ---------- views ---------- */
+function show(name) {
+  for (const v of ["home", "quiz", "result", "settings"]) $("#view-" + v).hidden = v !== name;
+  $("#top").hidden = name !== "home";
+  window.scrollTo(0, 0);
+  if (name === "home") renderHome();
+}
+
+async function renderHome() {
+  renderGreeting();
+  const [quizzes, wrong, results] = await Promise.all([DB.all("quizzes"), DB.all("wrong"), DB.all("results")]);
+
+  const due = wrong.filter((w) => w.due <= Date.now());
+  $("#wrongInfo").textContent = wrong.length
+    ? `${wrong.length} saved, ${due.length} due today. A question leaves the bank after you answer it correctly 4 times: today, then after 1, 3 and 7 days. Wrong answers start the cycle again.`
+    : "Questions you get wrong are saved here for revision.";
+  $("#btnDue").disabled = !due.length;
+  $("#btnAllWrong").disabled = !wrong.length;
+
+  // weak topics from all past results
+  const agg = {};
+  for (const r of results) for (const [t, [c, n]] of Object.entries(r.topics || {})) {
+    agg[t] ||= [0, 0]; agg[t][0] += c; agg[t][1] += n;
+  }
+  const weak = Object.entries(agg).filter(([, [, n]]) => n >= 3)
+    .map(([t, [c, n]]) => ({ t, pct: Math.round((c / n) * 100) }))
+    .sort((a, b) => a.pct - b.pct).slice(0, 5);
+  $("#weakCard").hidden = !weak.length;
+  $("#weakList").replaceChildren(...weak.map((w) => bar(w.t, w.pct)));
+
+  const list = $("#quizList");
+  if (!quizzes.length) {
+    list.replaceChildren(h("p", { class: "muted", style: "margin:0" }, "No saved tests yet. Paste some material above and generate one."));
+  } else {
+    quizzes.sort((a, b) => b.created - a.created);
+    list.replaceChildren(...quizzes.map((z) => h("div", { class: "qrow" },
+      h("div", { class: "meta" }, h("b", null, z.title), h("span", null, `${z.qs.length} questions, ${fmtDate(z.created)}`)),
+      h("button", { onclick: () => start(z.qs, { title: z.title, quizId: z.id }) }, "Start"),
+      h("button", { class: "danger", "aria-label": "Delete " + z.title, onclick: async (e) => {
+        const b = e.currentTarget;
+        if (b.dataset.armed) { await DB.del("quizzes", z.id); renderHome(); return; }
+        b.dataset.armed = "1"; b.textContent = "Sure?";
+        setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = "Delete"; } }, 3000);
+      } }, "Delete")
+    )));
+  }
+}
+
+function bar(name, pct) {
+  return h("div", { class: "bar" },
+    h("span", { class: "name" }, name),
+    h("span", { class: "track" }, h("span", { class: "fill" + (pct < 60 ? " low" : ""), style: `display:block;width:${pct}%` })),
+    h("span", { class: "pct" }, pct + "%"));
+}
+
+/* ---------- generate ---------- */
+function getCount() {
+  const v = $("#count").value;
+  if (v !== "custom") return +v;
+  const n = Math.min(50, Math.max(1, Math.floor(+$("#countCustom").value) || 10));
+  $("#countCustom").value = n;
+  return n;
+}
+
+function setStatus(msg, err) {
+  const s = $("#status"); s.textContent = msg; s.classList.toggle("err", !!err);
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+function chunkText(text, size = 600) {
+  const words = text.split(/\s+/), out = [];
+  for (let i = 0; i < words.length; i += size) out.push(words.slice(i, i + size).join(" "));
+  return out;
+}
+
+// One POST with retries for rate limits. Throws a readable error.
+async function post(url, headers, body) {
+  for (let attempt = 0; ; attempt++) {
+    let r;
+    try {
+      r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", ...headers }, body: JSON.stringify(body) });
+    } catch { throw new Error("Could not reach the AI service. Check your internet connection."); }
+    if (r.ok) return r.json();
+    const msg = (await r.json().catch(() => ({}))).error?.message || "";
+    if (r.status === 400 && /temperature/i.test(msg) && "temperature" in body) { delete body.temperature; continue; }
+    if ((r.status === 429 || r.status >= 500) && attempt < 2) { await sleep(5000 * (attempt + 1)); continue; }
+    if (r.status === 401 || r.status === 403 || (r.status === 400 && /api[ _]?key/i.test(msg))) throw new Error("The API key was rejected. Check it in Settings.");
+    if (r.status === 429) throw new Error(/quota|billing|credit/i.test(msg)
+      ? "No quota left on this key. Check your plan or billing with the provider."
+      : "Rate limit reached. Wait a minute and try again.");
+    if (r.status === 404) throw new Error("Model not found. Check the model name in Settings.");
+    throw new Error("AI service error (" + r.status + "). " + msg.slice(0, 160));
+  }
+}
+
+// Ask the chosen AI for JSON. Returns parsed JSON, or null if the reply was not valid JSON.
+async function askJSON(cfg, prompt) {
+  let out;
+  if (cfg.provider === "openai") {
+    const d = await post("https://api.openai.com/v1/chat/completions", { Authorization: "Bearer " + cfg.oKey },
+      { model: cfg.oModel, temperature: 0.2, response_format: { type: "json_object" }, messages: [{ role: "user", content: prompt }] });
+    out = d.choices?.[0]?.message?.content;
+  } else {
+    const d = await post(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(cfg.gModel)}:generateContent?key=${encodeURIComponent(cfg.gKey)}`,
+      {},
+      { contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2, responseMimeType: "application/json" } });
+    out = d.candidates?.[0]?.content?.parts?.[0]?.text;
+  }
+  try { return JSON.parse(String(out).replace(/```json|```/g, "").trim()); } catch { return null; }
+}
+
+const topicPrompt = (topic, n, lang) => `You are a TNPSC Group 2 exam question setter.
+Write ${n} MCQs on this topic: "${topic}".
+Rules:
+- 4 options, exactly one correct
+- Include only facts you are certain are correct. Skip anything uncertain.
+- TNPSC style: factual, statement-based, "which is NOT correct", match the following
+- Plausible distractors
+- "topic" is the syllabus unit (Polity, History, Geography, Economy, Tamil Nadu Administration, Aptitude, General Science, Tamil Literature)
+- Language: ${lang}
+Output format (very important):
+- "options" is exactly 4 plain strings, with no "A)", "B)" or numbering inside them
+- "answer" is a NUMBER, 0, 1, 2 or 3 (0 means the first option). Not a letter, not text.
+- Reply with ONLY the JSON, inside a single code block. No introduction, no closing remarks.
+{"questions":[{"question":"","options":["","","",""],"answer":0,"explanation":"","topic":""}]}`;
+
+const genPrompt = (chunk, n, lang) => `You are a TNPSC Group 2 exam question setter.
+From the material below, write ${n} MCQs.
+Rules:
+- 4 options, exactly one correct
+- Use ONLY facts present in the material
+- TNPSC style: factual, statement-based, "which is NOT correct", match the following
+- Plausible distractors
+- "source_quote" must be copied EXACTLY, word for word, from the material
+- "topic" is the syllabus unit (for example Polity, History, Geography, Economy, Tamil Nadu Administration, Aptitude, General Science, Tamil Literature)
+- Language: ${lang}
+Output format (very important):
+- "options" is exactly 4 plain strings, with no "A)", "B)" or numbering inside them
+- "answer" is a NUMBER, 0, 1, 2 or 3 (0 means the first option). Not a letter, not text.
+- Reply with ONLY the JSON, inside a single code block. No introduction, no closing remarks.
+{"questions":[{"question":"","options":["","","",""],"answer":0,"explanation":"","source_quote":"","topic":""}]}
+
+Material:
+${chunk}`;
+
+const verifyPrompt = (chunk, qs) => `Using ONLY the material below, choose the correct option index (0-3) for each question.
+Return ONLY a JSON object: {"answers":[<number>, ...]} with one number per question, in the same order.
+
+Material:
+${chunk}
+
+Questions:
+${JSON.stringify(qs.map((q, i) => ({ n: i + 1, question: q.question, options: q.options })))}`;
+
+// A quote counts if it appears in the material, or if at least 80% of its words do (tolerates small AI edits).
+function quoteOK(chunk, quote) {
+  const c = norm(chunk), q = norm(quote || "");
+  if (!q) return false;
+  if (c.includes(q)) return true;
+  const words = q.split(" ").filter(Boolean);
+  if (words.length < 3) return false;
+  const set = new Set(c.split(" "));
+  return words.filter((w) => set.has(w)).length / words.length >= 0.8;
+}
+
+// Generate, then check: (1) the quote must come from the material, (2) an independent solve must match the key.
+// Questions that pass both are returned. If NONE pass, the unchecked ones are returned, flagged, so a test is always produced.
+async function generateLocal(cfg, text, count, lang) {
+  const chunks = chunkText(text).slice(0, 8);
+  const per = Math.max(2, Math.ceil(count / chunks.length));
+  const good = [], fallback = [];
+  for (let c = 0; c < chunks.length && good.length < count; c++) {
+    setStatus(`Writing questions, part ${c + 1} of ${chunks.length}. Keep this screen open.`);
+    const out = await askJSON(cfg, genPrompt(chunks[c], per, lang));
+    const valid = fixQs(Array.isArray(out) ? out : out?.questions || []);
+    const quoted = valid.filter((q) => quoteOK(chunks[c], q.source_quote));
+    valid.filter((q) => !quoted.includes(q)).forEach((q) => fallback.push({ ...q, unchecked: true }));
+    if (!quoted.length) continue;
+
+    setStatus(`Checking answers, part ${c + 1} of ${chunks.length}. Keep this screen open.`);
+    const v = await askJSON(cfg, verifyPrompt(chunks[c], quoted));
+    const ans = (Array.isArray(v) ? v : v?.answers || []).map((a) => toIdx(a, []));
+    quoted.forEach((q, i) => (ans[i] === q.answer ? good.push(q) : fallback.push({ ...q, unchecked: true })));
+  }
+  return (good.length ? good : fallback).slice(0, count);
+}
+
+async function generateTopic(cfg, topic, count, lang) {
+  const out = await askJSON(cfg, topicPrompt(topic, count, lang));
+  return fixQs(Array.isArray(out) ? out : out?.questions || [])
+    .map((q) => ({ ...q, topic: q.topic || topic, fromAI: true })).slice(0, count);
+}
+
+async function generate() {
+  const cfg = cfgGet();
+  const text = $("#text").value.trim();
+  const topic = $("#title").value.trim();
+  const topicOnly = !text && topic.length >= 3;
+  const needText = text ? "Paste at least a few paragraphs (200+ characters)." : "Paste your study material, or just type a topic in the title box.";
+  if (cfg.provider === "manual") {
+    if (!topicOnly && text.length < 200) return setStatus(needText, true);
+    setStatus("");
+    return openManual(text, topicOnly ? topic : null);
+  }
+  const local = cfg.provider === "gemini" || cfg.provider === "openai";
+  if (local && !(cfg.provider === "openai" ? cfg.oKey : cfg.gKey)) return setStatus("Add your API key in Settings first.", true);
+  if (!local && !cfg.api) return setStatus("Add your backend URL in Settings first.", true);
+  if (topicOnly && !local) return setStatus("A topic alone needs the key mode or the copy-and-paste mode. Paste your material, or change the provider in Settings.", true);
+  if (!topicOnly && text.length < 200) return setStatus(needText, true);
+
+  const btn = $("#btnGen");
+  btn.disabled = true;
+  setStatus("Starting. This can take up to a minute. Keep this screen open.");
+  try {
+    const count = getCount(), lang = $("#lang").value;
+    let qs;
+    if (local) {
+      qs = topicOnly ? await generateTopic(cfg, topic, count, lang) : await generateLocal(cfg, text, count, lang);
+    } else {
+      const res = await fetch(cfg.api, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, count, language: lang }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.error) throw new Error(data.error || "Server error " + res.status);
+      qs = data.questions || [];
+    }
+    qs = qs.filter(validQ);
+    if (!qs.length) throw new Error("The AI did not return usable questions. Try pasting a longer, clearer passage.");
+
+    const quiz = { id: "z" + Date.now(), title: $("#title").value.trim() || text.slice(0, 40) + "…", created: Date.now(), qs };
+    await DB.put("quizzes", quiz);
+    $("#text").value = ""; $("#title").value = ""; setStatus("");
+    start(qs, { title: quiz.title, quizId: quiz.id });
+  } catch (e) {
+    setStatus(e.message === "Failed to fetch"
+      ? "Could not reach the backend. Check the URL in Settings and your internet connection."
+      : e.message, true);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+/* ---------- no-key mode 1: copy and paste with a free AI app ---------- */
+let manualCtx = null;
+
+function openManual(text, topic) {
+  const words = text.split(/\s+/);
+  const material = words.length > 5000 ? words.slice(0, 5000).join(" ") : text;
+  manualCtx = topic ? { topic: true, title: topic } : { material, title: $("#title").value.trim() || text.slice(0, 40) + "…" };
+  $("#manualPrompt").value = topic ? topicPrompt(topic, getCount(), $("#lang").value) : genPrompt(material, getCount(), $("#lang").value);
+  resetCopyBtn(); $("#reply").value = ""; setManual(!topic && words.length > 5000 ? "Only the first 5000 words are used. Paste long material in parts." : "");
+  $("#manualBox").hidden = false;
+  $("#manualBox").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function setManual(msg, err) { const e = $("#manualStatus"); e.textContent = msg; e.classList.toggle("err", !!err); }
+
+let copyTimer;
+function showCopied() {
+  const b = $("#btnCopy");
+  b.textContent = "Copied ✓";
+  b.classList.add("copied");
+  setManual("Copied. Now open Gemini or ChatGPT, paste it, and send.");
+  clearTimeout(copyTimer);
+  copyTimer = setTimeout(resetCopyBtn, 4000);
+}
+function resetCopyBtn() { const b = $("#btnCopy"); b.textContent = "Copy prompt"; b.classList.remove("copied"); }
+
+async function copyPrompt() {
+  const ta = $("#manualPrompt");
+  try { await navigator.clipboard.writeText(ta.value); showCopied(); }
+  catch {
+    ta.focus(); ta.select();
+    try { document.execCommand("copy"); showCopied(); }
+    catch { setManual("Could not copy automatically. Select all the text in the box and copy it.", true); }
+  }
+}
+
+// Open the ChatGPT app if it is installed, otherwise the website
+function openChatGPT(e) {
+  const ua = navigator.userAgent, web = "https://chatgpt.com";
+  if (/android/i.test(ua)) {
+    // Android: launch the ChatGPT app directly; the website opens only if the app is not installed
+    e.preventDefault();
+    location.href = "intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.openai.chatgpt;S.browser_fallback_url=" + encodeURIComponent(web) + ";end";
+  } else if (/iphone|ipad|ipod/i.test(ua)) {
+    // iPhone/iPad: try the app, and open the website if the app did not take over
+    e.preventDefault();
+    let left = false;
+    const gone = () => { left = true; };
+    document.addEventListener("visibilitychange", gone, { once: true });
+    window.addEventListener("pagehide", gone, { once: true });
+    location.href = "chatgpt://";
+    setTimeout(() => { if (!left && !document.hidden) window.open(web, "_blank", "noopener"); }, 1500);
+  }
+  // laptop: the normal link opens the website in a new tab
+}
+
+function tryParse(s) {
+  try { return JSON.parse(s); } catch {}
+  const a = s.replace(/,\s*([}\]])/g, "$1");                       // trailing commas
+  try { return JSON.parse(a); } catch {}
+  return JSON.parse(a.replace(/[\u201c\u201d]/g, '"'));            // curly quotes
+}
+
+function listFrom(o) {
+  if (Array.isArray(o)) return o;
+  if (!o || typeof o !== "object") return [];
+  const k = o.questions ?? o.mcqs ?? o.items ?? o.data;
+  if (Array.isArray(k)) return k;
+  if (k && typeof k === "object") return listFrom(k);
+  return Object.values(o).find(Array.isArray) || [];
+}
+
+// Last resort (reply cut off, or text mixed in): pick out each complete { ... "question": ... } object
+function salvage(t) {
+  const out = [], stack = [];
+  let inStr = false, esc = false;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (inStr) { if (esc) esc = false; else if (c === "\\") esc = true; else if (c === '"') inStr = false; continue; }
+    if (c === '"') { inStr = true; continue; }
+    if (c === "{") stack.push(i);
+    else if (c === "}" && stack.length) {
+      const seg = t.slice(stack.pop(), i + 1);
+      if (/"question"\s*:/.test(seg)) { try { out.push(tryParse(seg)); } catch {} }
+    }
+  }
+  return out;
+}
+
+// Returns the raw list of question objects found in whatever the AI replied
+function parseReply(t) {
+  t = String(t).replace(/\u00a0/g, " ").trim();
+  const fences = [...t.matchAll(/```[a-zA-Z]*\s*([\s\S]*?)```/g)].map((m) => m[1].trim()).sort((a, b) => /question/i.test(b) - /question/i.test(a));
+  for (const cand of [...fences, t]) {
+    const i = cand.search(/[\[{]/);
+    if (i < 0) continue;
+    let s = cand.slice(i);
+    const last = Math.max(s.lastIndexOf("]"), s.lastIndexOf("}"));
+    if (last >= 0) s = s.slice(0, last + 1);
+    try { const list = listFrom(tryParse(s)); if (list.length) return list; } catch {}
+  }
+  return salvage(t);
+}
+
+async function saveAndStart(qs, title) {
+  const quiz = { id: "z" + Date.now(), title, created: Date.now(), qs };
+  await DB.put("quizzes", quiz);
+  start(qs, { title, quizId: quiz.id });
+}
+
+async function importReply() {
+  if (!manualCtx) return;
+  const rawList = parseReply($("#reply").value);
+  if (!rawList.length) return setManual("Could not find any questions in the reply. Copy the AI's full answer, then paste it here. If it stopped halfway, ask it to continue and paste everything.", true);
+  let qs = fixQs(rawList);
+  if (!qs.length) return setManual(`Found ${rawList.length} item(s) but none had 4 options and a clear correct answer. Ask the AI: "Use exactly 4 options and give answer as a number 0 to 3."`, true);
+  // Local check: the quote must come from the pasted material. Others are kept but flagged.
+  let flagged = 0;
+  if (manualCtx.topic) qs = qs.map((q) => ({ ...q, topic: q.topic || manualCtx.title, fromAI: true }));
+  else qs = qs.map((q) => { if (quoteOK(manualCtx.material, q.source_quote)) return q; flagged++; return { ...q, unchecked: true }; });
+  const title = manualCtx.title;
+  $("#manualBox").hidden = true; $("#text").value = ""; $("#title").value = "";
+  setStatus(flagged ? `${flagged} question(s) are marked "Not verified" because their quote was not found in your text.` : "");
+  await saveAndStart(qs, title);
+}
+
+/* ---------- no-key mode 2: instant fill-in-the-blank test, made on the phone ---------- */
+const STOP_START = new Set(["The","A","An","In","On","It","This","That","These","Those","He","She","They","We","As","At","By","For","From","Of","To","With","And","But","Or","If","When","While","Its","His","Her","Their","There","Also"]);
+
+function makeCloze(text, count, label) {
+  const sents = text.replace(/\s+/g, " ").split(/(?<=[.!?\u0964])\s+/).map((x) => x.trim())
+    .filter((x) => { const n = x.split(" ").length; return n >= 6 && n <= 40; });
+  const pools = { num: [], ent: [], word: [] };
+  const items = [];
+  const re = /\b(?:[A-Z][A-Za-z'\-]+|\d+(?:[.,]\d+)?)(?:\s+(?:[A-Z][A-Za-z'\-]+|\d+(?:[.,]\d+)?))*\b/g;
+
+  for (const sent of sents) {
+    const found = [];
+    re.lastIndex = 0;
+    let m;
+    while ((m = re.exec(sent))) {
+      let parts = m[0].split(" "), start = m.index;
+      if (STOP_START.has(parts[0])) { start += parts[0].length + 1; parts = parts.slice(1); }
+      const ans = parts.join(" ");
+      if (!ans) continue;
+      if (start === 0 && !ans.includes(" ") && !/\d/.test(ans)) continue;   // sentence-initial single capital word
+      const type = /^\d/.test(ans) && !/[A-Za-z]/.test(ans) ? "num" : "ent";
+      found.push({ ans, type, start });
+      pools[type].push(ans);
+    }
+    const longWords = sent.match(/\p{L}[\p{L}\p{M}]{5,}/gu) || [];
+    pools.word.push(...longWords);
+    if (!found.length && longWords.length) {
+      const w = [...longWords].sort((a, b) => b.length - a.length)[0];
+      found.push({ ans: w, type: "word", start: sent.indexOf(w) });
+    }
+    if (found.length) items.push({ sent, pick: found[Math.floor(Math.random() * found.length)] });
+  }
+
+  const built = [];
+  for (const { sent, pick } of items) {
+    const { ans, type, start } = pick;
+    const lower = ans.toLowerCase();
+    const pool = shuffle([...new Set(pools[type])].filter((x) => x.toLowerCase() !== lower && !sent.includes(x)));
+    // prefer distractors that look like the answer (same first word, similar length)
+    const sc = (x) => (x.split(" ")[0] === ans.split(" ")[0] ? 0 : 2) + Math.abs(x.split(" ").length - ans.split(" ").length) + Math.abs(x.length - ans.length) * 0.1;
+    pool.sort((a, b) => sc(a) - sc(b));
+    const d = pool.slice(0, 3);
+    if (d.length < 3 && type === "num") {
+      const n = parseFloat(ans.replace(/,/g, ""));
+      if (isFinite(n)) {
+        const steps = !Number.isInteger(n) ? [0.5, 1, 2] : n >= 1000 ? [1, 2, 3, 5, 10, 15] : [1, 2, 3, 5, 10];
+        for (const st of shuffle(steps)) for (const v of shuffle([n + st, n - st])) {
+          const str = String(v);
+          if (d.length < 3 && v >= 0 && str !== ans && !d.includes(str)) d.push(str);
+        }
+      }
+    }
+    if (d.length < 3) continue;
+    const options = shuffle([ans, ...d.slice(0, 3)]);
+    built.push({
+      question: "Fill in the blank:\n" + sent.slice(0, start) + "_____" + sent.slice(start + ans.length),
+      options, answer: options.indexOf(ans),
+      explanation: "Answer: " + ans + ".", source_quote: sent, topic: label || "Practice",
+    });
+  }
+  if (built.length <= count) return built;
+  const step = built.length / count;
+  return Array.from({ length: count }, (_, i) => built[Math.floor(i * step)]);
+}
+
+async function instantTest() {
+  const text = $("#text").value.trim();
+  if (!text) return setStatus("The instant test needs your notes. For just a topic, use Generate test.", true);
+  if (text.length < 200) return setStatus("Paste at least a few paragraphs (200+ characters).", true);
+  const title = $("#title").value.trim() || text.slice(0, 40) + "…";
+  const qs = makeCloze(text, getCount(), $("#title").value.trim());
+  if (!qs.length) return setStatus("Could not make questions from this text. Paste longer notes with names, dates or numbers.", true);
+  $("#text").value = ""; $("#title").value = "";
+  setStatus(qs.length < getCount() ? `Only ${qs.length} questions could be made from this text.` : "");
+  await saveAndStart(qs, title);
+}
+
+/* ---------- quiz engine ---------- */
+let S = null, exitArmed = null;
+
+function start(qs, { title, mode = "quiz", quizId = null }) {
+  if (!qs.length) return;
+  const cfg = cfgGet();
+  clearTimeout(exitArmed); exitArmed = null; $("#btnExit").textContent = "Exit test";
+  S = { qs, i: 0, ans: [], title, mode, quizId, timed: cfg.timed, secs: cfg.secs, left: 0, timer: null, locked: false };
+  show("quiz");
+  showQ();
+}
+
+function showQ() {
+  const q = S.qs[S.i];
+  S.locked = false;
+  $("#qCount").textContent = `${S.i + 1} of ${S.qs.length}`;
+  $("#qProg").style.width = (S.i / S.qs.length) * 100 + "%";
+  $("#qText").textContent = q.question;
+  const tag = $("#qTopic");
+  tag.textContent = [q.topic, q.unchecked ? "Not verified against your text" : "", q.fromAI ? "From AI knowledge, check the facts" : ""].filter(Boolean).join(" · ");
+  tag.hidden = !tag.textContent;
+  $("#qFb").hidden = true;
+  $("#btnSkip").hidden = false;
+  $("#qOpts").replaceChildren(...q.options.map((o, idx) => h("button", { class: "opt", onclick: () => choose(idx) },
+    h("span", { class: "bubble" }, "ABCD"[idx]), h("span", { class: "txt" }, o))));
+
+  clearInterval(S.timer);
+  const t = $("#qTimer"); t.hidden = !S.timed;
+  if (S.timed) {
+    S.left = S.secs; tick();
+    S.timer = setInterval(() => { S.left--; tick(); if (S.left <= 0) reveal(null); }, 1000);
+  }
+}
+
+function tick() {
+  const t = $("#qTimer");
+  t.textContent = Math.max(S.left, 0) + "s";
+  t.classList.toggle("low", S.left <= 10);
+}
+
+function choose(idx) {
+  if (S.locked) return;
+  const btns = $("#qOpts").children;
+  btns[idx].classList.add("sel");
+  reveal(idx);
+}
+
+function reveal(sel) {
+  if (S.locked) return;
+  S.locked = true;
+  clearInterval(S.timer);
+  $("#btnSkip").hidden = true;
+  const q = S.qs[S.i];
+  const ok = sel === q.answer;
+  S.ans[S.i] = { sel, ok };
+
+  [...$("#qOpts").children].forEach((b, idx) => {
+    b.disabled = true;
+    if (idx === q.answer) b.classList.add("right");
+    else if (idx === sel) b.classList.add("wrong");
+  });
+
+  const v = $("#fbVerdict");
+  v.textContent = sel === null ? "Time is up" : ok ? "Correct" : "Not quite";
+  v.className = "verdict " + (ok ? "ok" : "bad");
+  $("#fbExpl").textContent = q.explanation || "";
+  $("#fbEvidence").hidden = !q.source_quote;
+  $("#fbQuote").textContent = q.source_quote || "";
+  $("#btnReport").hidden = S.mode === "sample";
+  $("#btnReport").disabled = false;
+  $("#btnReport").textContent = "Report wrong question";
+  $("#btnNext").textContent = S.i < S.qs.length - 1 ? "Next question" : "See result";
+  $("#qFb").hidden = false;
+  $("#btnNext").focus({ preventScroll: true });
+  $("#qFb").scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+  S.pending = updateBank(q, ok);
+  const isRev = S.mode === "revise" || S.mode === "practice";
+  const mb = $("#btnMaster"); mb.hidden = !isRev; mb.disabled = false; mb.textContent = "I know this, remove from revision";
+}
+
+async function updateBank(q, ok) {
+  if (S.mode === "sample" || S.mode === "practice") return;
+  const id = hid(q.question);
+  if (S.mode === "revise") {
+    const cur = await DB.get("wrong", id);
+    if (!cur) return;
+    if (ok) {
+      const box = cur.box + 1;
+      if (box > INTERVALS.length) return DB.del("wrong", id);   // mastered
+      cur.box = box; cur.due = Date.now() + INTERVALS[box - 1] * DAY;
+    } else {
+      cur.box = 0; cur.due = Date.now() + DAY;
+    }
+    return DB.put("wrong", cur);
+  }
+  if (!ok) return DB.put("wrong", { id, q, box: 0, due: Date.now() });
+}
+
+async function report() {
+  const q = S.qs[S.i];
+  S.ans[S.i] = { reported: true };
+  await DB.del("wrong", hid(q.question));
+  if (S.quizId) {
+    const z = await DB.get("quizzes", S.quizId);
+    if (z) { z.qs = z.qs.filter((x) => x.question !== q.question); await DB.put("quizzes", z); }
+  }
+  $("#btnReport").disabled = true;
+  $("#btnReport").textContent = "Removed from your tests";
+}
+
+async function removeFromRevision() {
+  const q = S.qs[S.i];
+  try { await S.pending; } catch {}
+  await DB.del("wrong", hid(q.question));
+  $("#btnMaster").disabled = true;
+  $("#btnMaster").textContent = "Removed from revision";
+}
+
+function skip() {
+  if (S.locked) return;
+  S.locked = true;
+  clearInterval(S.timer);
+  S.ans[S.i] = { sel: null, ok: false, skipped: true };
+  next();
+}
+
+function next() {
+  if (S.i < S.qs.length - 1) { S.i++; showQ(); } else finish();
+}
+
+async function finish() {
+  clearInterval(S.timer);
+  const counted = S.qs.map((q, i) => ({ q, a: S.ans[i] })).filter((x) => x.a && !x.a.reported);
+  const score = counted.filter((x) => x.a.ok).length;
+  const total = counted.length;
+  const pct = total ? Math.round((score / total) * 100) : 0;
+
+  const topics = {};
+  for (const { q, a } of counted) {
+    const t = cleanTopic(q.topic) || "General";
+    topics[t] ||= [0, 0]; topics[t][1]++; if (a.ok) topics[t][0]++;
+  }
+  const nm = (cfgGet().name || "").trim();
+  let cheer = "";
+  if (S.mode !== "sample" && total) {
+    const prior = (await DB.all("results")).length;
+    await DB.put("results", { id: "r" + Date.now(), date: Date.now(), title: S.title, score, total, topics });
+    const days = getDays(), key = dayKey(), newDay = !days.includes(key);
+    if (newDay) { days.push(key); saveDays(days); }
+    const st = streakOf(days);
+    if (prior === 0) cheer = `That was your first test${nm ? ", " + nm : ""}. This is how it starts.`;
+    else if (newDay && MILESTONES.includes(st)) cheer = `${st} days in a row${nm ? ", " + nm : ""}. Keep going.`;
+  }
+
+  const skipped = counted.filter((x) => x.a.skipped).length;
+  S.wrongQs = counted.filter((x) => !x.a.ok).map((x) => x.q);
+  $("#rTitle").textContent = S.title;
+  $("#rScore").textContent = `${score} / ${total}`;
+  $("#rPct").textContent = pct + "%";
+  $("#rMsg").textContent = (skipped ? skipped + " skipped. " : "") + resultMsg(score, total, pct, nm, S.mode !== "sample");
+  $("#rCheer").hidden = !cheer; $("#rCheer").textContent = cheer;
+  $("#rTopics").replaceChildren(...Object.entries(topics).map(([t, [c, n]]) => bar(t, Math.round((c / n) * 100))));
+  $("#btnRetry").hidden = !S.wrongQs.length;
+  $("#btnRetry").textContent = "Retry wrong" + (skipped ? " and skipped" : "") + " (" + S.wrongQs.length + ")";
+  show("result");
+}
+
+function shuffle(a) {
+  a = a.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+async function revise(onlyDue) {
+  const wrong = await DB.all("wrong");
+  const items = wrong.filter((w) => !onlyDue || w.due <= Date.now());
+  start(shuffle(items.map((w) => w.q)), { title: onlyDue ? "Revision: due today" : "Revision: all wrong", mode: onlyDue ? "revise" : "practice" });
+}
+
+const SAMPLE = [
+  { question: "Which Article of the Indian Constitution abolishes untouchability?", options: ["Article 14", "Article 17", "Article 18", "Article 21"], answer: 1,
+    explanation: "Article 17 abolishes untouchability and forbids its practice in any form.", source_quote: "Article 17 abolishes untouchability.", topic: "Polity" },
+  { question: "In which year was Madras State renamed Tamil Nadu?", options: ["1956", "1967", "1969", "1971"], answer: 2,
+    explanation: "Madras State was renamed Tamil Nadu in 1969.", source_quote: "Madras State was renamed Tamil Nadu in 1969.", topic: "History" },
+  { question: "How many chapters (adhikarams) does the Thirukkural have?", options: ["100", "133", "145", "150"], answer: 1,
+    explanation: "The Thirukkural has 133 adhikarams, with 10 couplets in each.", source_quote: "The Thirukkural is divided into 133 adhikarams.", topic: "Tamil Literature" },
+];
+
+/* ---------- settings & backup ---------- */
+let draft = null, shownProv = null;
+const HELP = {
+  manual: "Nothing to set up. The app makes a prompt, you paste it into the free Gemini or ChatGPT app, then paste the answer back.",
+  gemini: "Get a free key at aistudio.google.com. It is saved only on this phone.",
+  openai: "Create a key at platform.openai.com/api-keys. A ChatGPT subscription does not include API credit, because the API is billed separately. The key is saved only on this phone.",
+};
+
+function keepProv() {
+  if (shownProv === "gemini") { draft.gKey = $("#cfgKey").value.trim(); draft.gModel = $("#cfgModel").value.trim() || DEF.gModel; }
+  if (shownProv === "openai") { draft.oKey = $("#cfgKey").value.trim(); draft.oModel = $("#cfgModel").value.trim() || DEF.oModel; }
+}
+
+function fillProv() {
+  const p = $("#cfgProv").value;
+  shownProv = p;
+  $("#boxKey").hidden = p === "backend" || p === "manual";
+  $("#boxApi").hidden = p !== "backend";
+  if (p === "gemini") { $("#cfgKey").value = draft.gKey; $("#cfgModel").value = draft.gModel; }
+  if (p === "openai") { $("#cfgKey").value = draft.oKey; $("#cfgModel").value = draft.oModel; }
+  $("#keyHelp").textContent = HELP[p] || "";
+}
+
+function openSettings() {
+  draft = cfgGet();
+  $("#cfgName").value = draft.name;
+  $("#cfgTheme").value = draft.theme;
+  $("#cfgProv").value = draft.provider;
+  shownProv = null;
+  fillProv();
+  $("#cfgApi").value = draft.api;
+  $("#cfgTimed").checked = draft.timed;
+  $("#cfgSecs").value = draft.secs;
+  for (const id of ["#saveStatus", "#cfgStatus"]) { $(id).textContent = ""; $(id).classList.remove("err"); }
+  show("settings");
+}
+
+function saveSettings() {
+  keepProv();
+  draft.name = $("#cfgName").value.trim().slice(0, 30);
+  draft.theme = $("#cfgTheme").value;
+  draft.provider = $("#cfgProv").value;
+  draft.api = $("#cfgApi").value.trim();
+  const st = $("#saveStatus");
+  if (draft.provider === "backend" && !/^https:\/\//i.test(draft.api)) {
+    st.textContent = "The backend URL must start with https://"; st.classList.add("err"); return;
+  }
+  draft.timed = $("#cfgTimed").checked;
+  draft.secs = Math.min(180, Math.max(10, +$("#cfgSecs").value || 45));
+  cfgSet(draft);
+  applyTheme(draft.theme);
+  show("home");
+}
+
+async function exportBackup() {
+  const data = { app: "tnpsc-quiz", version: 1, quizzes: await DB.all("quizzes"), wrong: await DB.all("wrong"), results: await DB.all("results"), days: getDays() };
+  const a = h("a", { href: URL.createObjectURL(new Blob([JSON.stringify(data)], { type: "application/json" })), download: "tnpsc-quiz-backup.json" });
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+async function importBackup(file) {
+  const s = $("#cfgStatus"); s.classList.remove("err");
+  try {
+    const d = JSON.parse(await file.text());
+    if (d.app !== "tnpsc-quiz") throw new Error("This is not a TAKE TEST backup file.");
+    for (const store of ["quizzes", "wrong", "results"]) for (const row of d[store] || []) await DB.put(store, row);
+    if (Array.isArray(d.days)) saveDays([...getDays(), ...d.days.filter((x) => typeof x === "string")]);
+    s.textContent = "Backup imported.";
+  } catch (e) { s.textContent = e.message; s.classList.add("err"); }
+}
+
+/* ---------- wiring ---------- */
+$("#btnGen").onclick = generate;
+$("#count").onchange = () => { $("#customWrap").hidden = $("#count").value !== "custom"; };
+$("#btnInstant").onclick = instantTest;
+$("#btnCopy").onclick = copyPrompt;
+$("#btnOpenChatGPT").onclick = openChatGPT;
+$("#btnImport2").onclick = importReply;
+$("#btnCancelManual").onclick = () => ($("#manualBox").hidden = true);
+$("#btnDue").onclick = () => revise(true);
+$("#btnAllWrong").onclick = () => revise(false);
+$("#btnSample").onclick = () => start(SAMPLE, { title: "Sample test", mode: "sample" });
+$("#btnSettings").onclick = openSettings;
+$("#btnBackSettings").onclick = () => show("home");
+$("#btnSaveCfg").onclick = saveSettings;
+$("#cfgProv").onchange = () => { keepProv(); fillProv(); };
+$("#btnExport").onclick = exportBackup;
+$("#btnImport").onclick = () => $("#fileImport").click();
+$("#fileImport").onchange = (e) => e.target.files[0] && importBackup(e.target.files[0]);
+$("#btnNext").onclick = next;
+$("#btnSkip").onclick = skip;
+$("#btnMaster").onclick = removeFromRevision;
+$("#btnReport").onclick = report;
+$("#btnHome").onclick = () => show("home");
+$("#btnRetry").onclick = () => start(shuffle(S.wrongQs), { title: "Retry: " + S.title, mode: S.mode === "sample" ? "sample" : "retry", quizId: null });
+$("#btnExit").onclick = () => {
+  const b = $("#btnExit");
+  if (exitArmed) { clearTimeout(exitArmed); exitArmed = null; b.textContent = "Exit test"; clearInterval(S.timer); show("home"); return; }
+  b.textContent = "Tap again to exit";
+  exitArmed = setTimeout(() => { exitArmed = null; b.textContent = "Exit test"; }, 3000);
+};
+
+document.addEventListener("keydown", (e) => {
+  if ($("#view-quiz").hidden || e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  const idx = "abcd".indexOf(k) >= 0 ? "abcd".indexOf(k) : "1234".indexOf(k);
+  if (idx >= 0 && !S.locked) choose(idx);
+});
+
+let deferredInstall = null, installTimer = null;
+const isStandalone = () => navigator.standalone || matchMedia("(display-mode: standalone)").matches;
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+const instMsg = (t) => { const m = $("#installMsg"); m.textContent = t; m.hidden = !t; };
+
+if (isStandalone()) $("#btnInstall").hidden = true;
+else $("#btnInstall").hidden = false;                       // always visible on the web page
+
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredInstall = e; });
+
+async function installHelp() {
+  if (isIOS) return instMsg("On iPhone or iPad: open this page in Safari, tap Share, then Add to Home Screen.");
+  let why = "";
+  try {
+    const r = await fetch("manifest.json", { cache: "no-store" });
+    if (!r.ok) why = "The install files are missing: upload manifest.json, icon-192.png, icon-512.png and icon-maskable-512.png next to index.html on GitHub.";
+    else {
+      const j = await r.json();
+      for (const ic of j.icons || []) {
+        const x = await fetch(new URL(ic.src, new URL("manifest.json", location.href)), { cache: "no-store" });
+        if (!x.ok) { why = ic.src + " is missing on the website. Upload it next to index.html on GitHub."; break; }
+      }
+    }
+  } catch { why = "Could not check the install files."; }
+  instMsg((why ? why + " " : "") + "Use Chrome (not another browser), reload this page twice, then tap Install app again. Or open Chrome's menu and tap Add to Home screen.");
+}
+
+$("#btnInstall").onclick = async () => {
+  if (!deferredInstall) return installHelp();
+  deferredInstall.prompt();
+  const choice = await deferredInstall.userChoice;
+  deferredInstall = null;
+  if (choice.outcome !== "accepted") return;
+  instMsg("Installing... check your home screen or app drawer in a few seconds.");
+  clearTimeout(installTimer);
+  installTimer = setTimeout(installHelp, 25000);           // accepted but never finished: explain why
+};
+window.addEventListener("appinstalled", () => { clearTimeout(installTimer); instMsg(""); $("#btnInstall").hidden = true; });
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+applyTheme(cfgGet().theme);
+renderHome();
+</script>
+</body>
+</html>
